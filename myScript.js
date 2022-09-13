@@ -13,10 +13,10 @@
 // }
 
 /**2 */
-// for (let j = 1; j <= 6; j++) {
+// for (let j = 1; j <= 10; j++) {
 //     for (let k = 1; k <= j; k++) {
 
-//         document.write("*");
+//         document.write("-Y-") + document.write("-O-");
 //         // let k ="*"
 //         // document.getElementById("write").innerHTML = k
 //     }
@@ -24,11 +24,12 @@
 // }
 // const star = "*";
 // for (let index = 1; index <= 5; index++) {
-//   console.log(star.repeat(index));
+//  document.write(star.repeat(index));
 // }
-1
+
 /**
 1 ile 100 arasindaki asal sayilar */
+// let not_Prime="";
 // for (let counter = 2; counter <= 100; counter++) {
 
 //     let notPrime = false;
@@ -39,9 +40,12 @@
 //         }
 //     }
 //     if (notPrime === false) {
-//         console.log(counter);
+//         not_Prime+= "  "+counter;
+        
 //     }
+    
 // }
+// document.write(not_Prime);
 // // bir asal sayi nasil bulunur 
 // // bir asal sayi bir ve kendisine bolunebilen sayidir
 // // bir asal sayi ikiden itibaren kendisine 
@@ -138,13 +142,13 @@ button.addEventListener('click', degerlendirme);
 // let sonuc = document.getElementById("sonuc");
 
 
-// sonuc.addEventListener('click',sonuc);
+// sonuc.addEventListener('click', login);
 // const password = 123456;
-//  const userName = "yavuz";
+// const userName = "yavuz";
 // function login() {
 
-//     let passwords = document.getElementById("model").value;
-//     let userNames = document.getElementById("color").value;
+//     let passwords = document.getElementById("username").value;
+//     let userNames = document.getElementById("password").value;
 
 //     if (passwords == password && userNames == userName) {
 //         console.log("ok")
@@ -153,12 +157,13 @@ button.addEventListener('click', degerlendirme);
 //         console.log("tekrar deneyiniz")
 //     }
 // }
-// let myColor = ["Red", "Green", "White", "Black"];  Yukaridaki dizeyi konsola "red+green+white+black" seklinde yazdirin.
+// let myColor = ["Red", "Green", "White", "Black"];  
+//Yukaridaki dizeyi konsola "red+green+white+black" seklinde yazdirin.
 
 // let myColor = ["Red", "Green", "White", "Black"];
-// let text = myColor.join("+");
-// let myColor = ["Red", "Green", "White", "Black"];
-// console.log(myColor.join("+"));
+
+// console.log(myColor.join("--"));
+
 // let arrayString = myColor.join("+");
 // console.log(arrayString);
 // console.log(arrayString.toLowerCase());
@@ -167,7 +172,9 @@ button.addEventListener('click', degerlendirme);
 
 // let names = ["Ahmet", "Mehmet", "Selami", "Necmi", "Bekir", "Ayse", "Seyma"]; 
 
-// let lenght = names.length
+// let lenght = names.length;
+
+// console.log(lenght);
 
 // function getRandomInt() {
 //     return Math.floor(Math.random() * lenght);
@@ -180,7 +187,7 @@ button.addEventListener('click', degerlendirme);
 // let array2 = [1,15,32,-6,213,100];
 // let lenght = array1.length;
 
-// let toplam = 0
+// let toplam = 0;
 // for (let index = 0; index < array1.length; index++) {
 //     const element = array1[index];
 //     if(array2.includes(element) == true){
@@ -194,13 +201,14 @@ button.addEventListener('click', degerlendirme);
  * Verilen bir cümlede verilen bir kelimenin kaç defa geçtiğini bulan bir program yazınız. Yapilan programda aranan kelimeyi ve kaynak cümleyi gireceğiniz input alanlari oluşturacaksınız.
  */
 // let data = "HiCoders gönüllüleri, HiCoders egitmenleri, HiCoders yöneticileri ve HiCoders ögrencileri olarak, HiCoders JS BootCamp’i icra ediyoruz.";
-// let anahtar = "HiCoders"
+// const anahtar = "HiCoders";
 // let array = data.split(" ");
-// let toplam = 0
+// console.log(array);
+// let toplam = 0;
 // for (let index = 0; index < array.length; index++) {
 //     let element = array[index]
 //     if (element === anahtar) {
-//         toplam++
+//         toplam++;
 //     }
 // }
 // console.log("Toplam:", toplam)
@@ -255,3 +263,18 @@ fotoContainer.innerHTML = `
         </div>
         </div>
 `;
+// // random sayi;
+// let randomNumber="";
+// function sayiUret() {
+//     document.getElementById("numberRandom").innerHTML = randomInt(10, 20);
+//   }
+
+//   function randomInt(min, max) {
+//     return Math.floor(Math.random() * (max - min + 1)) + min;
+//   }
+// // //fill map ile array list olusturma
+// const array = Array(10)
+//     .fill(1)
+//     .map((n, i) => n + i)
+
+// console.log(array)
